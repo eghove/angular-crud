@@ -9,6 +9,8 @@ import { GstEditComponent } from './gst-edit/gst-edit.component';
 import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
 // form validation package
 import { ReactiveFormsModule } from '@angular/forms';
+// import the httpClientModule
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -22,7 +24,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     SlimLoadingBarModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
