@@ -11,6 +11,9 @@ import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
 import { ReactiveFormsModule } from '@angular/forms';
 // import the httpClientModule
 import { HttpClientModule } from '@angular/common/http';
+// import the business.service
+import { BusinessService } from './business.service';
+
 
 
 @NgModule({
@@ -27,7 +30,9 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    BusinessService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
